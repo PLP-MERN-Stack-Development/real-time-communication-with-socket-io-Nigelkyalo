@@ -1,0 +1,107 @@
+.room-list {
+  padding: 10px;
+}
+
+.room-list-header {
+  margin-bottom: 10px;
+}
+
+.create-room-button {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.create-room-button:hover {
+  background: #5568d3;
+}
+
+.create-room-form {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.create-room-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.create-room-input:focus {
+  border-color: #667eea;
+}
+
+.create-room-submit {
+  padding: 8px 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.create-room-submit:hover {
+  background: #5568d3;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.room-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.room-item:hover {
+  background: #f5f5f5;
+  border-color: #667eea;
+}
+
+.room-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.room-name {
+  font-weight: 500;
+}
+
+.unread-badge {
+  background: #ff4444;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.room-item.active .unread-badge {
+  background: rgba(255, 255, 255, 0.3);
+}
+
